@@ -1,15 +1,23 @@
-import java.util.Scanner;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package sistemarestaurante;
 
+/**
+ *
+ * @author victo
+ */
 public class Cliente {
+    public String nome;
+    public String telefone;
     
-    private String nome;
-    private int id;
-    
-    public Cliente(String nome, int id){
-        this.nome = nome;
-        this.id = id;
+    public Cliente(String Nome, String Telefone){
         
+        this.nome = Nome;
+        this.telefone = Telefone;
+    
     }
     
+    
 }
-
