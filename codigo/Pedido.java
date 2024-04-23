@@ -1,40 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package sistemarestaurante;
+
+/**
+ *
+ * @author victo
+ */
 public class Pedido {
-    private int id;
-    private Cliente cliente;
-    private int numeroDePessoas;
-    private int horaEntrada;
-    private int horaSaida;
-    private int dataEntrada;
-    private int dataSaida;
-    private String status;
+    public int id;
+    public Cliente cliente;
+    public int numeroDePessoas;
+    public String horaEntrada;
+    public String horaSaida;
+    public String dataEntrada;
+    public String dataSaida;
+    private int mesa;
+
     
     
-    public Pedido(Cliente cliente, String staus, int numeroDePessoas, int horaEntrada, int horaSaida, int dataEntrada, int dataSaida){
+    public Pedido(Cliente cliente, int numeroDePessoas, String horaEntrada, String horaSaida, String dataEntrada, String dataSaida, int id){
         this.cliente = cliente;
         this.numeroDePessoas = numeroDePessoas;
         this.horaEntrada = horaEntrada;
         this.horaSaida = horaSaida;
         this.dataEntrada = dataEntrada;
         this.dataSaida = dataSaida;
+        this.id = id;
+        this.mesa = 0;
     }
     
-    public String registrarPedido(){
-    return "";
-    }
-    
-    public boolean atualizarPedido(){
-    return false;
-    }
-    
-    public boolean cancelarPedido(){
-    return false;
-    }
-    
-    public void consultarPedido(){
-    
-    }
-    
-    public void listarPedidos(){
-    
-    }
 }
