@@ -105,8 +105,6 @@ public class SistemaRestaurante {
 
         }
 
-        System.out.println("Volte sempre!");
-
     }
 
     //funcão que inicializa as mesas de acordo com sua quantidade
@@ -242,7 +240,7 @@ public class SistemaRestaurante {
         for (int i = 0; i < mesas.length; i++) {
            if(mesas[i].idMesa == mesaALiberar){
                mesas[i].desalocarMesa();
-               System.out.println("A mesa "+mesas[i]+" foi desocupada!");
+               System.out.println("A mesa "+mesas[i].idMesa+" foi desocupada!");
            }
                 } 
 
