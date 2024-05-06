@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package sistemarestaurante;
+package projetorestaurante;
+
+import java.time.LocalDate;
 
 /**
  *
@@ -16,19 +18,27 @@ public class Pedido {
     public String horaSaida;
     public String dataEntrada;
     public String dataSaida;
-    private int mesa;
+    public boolean statusPedido;// F -não atendido T -Atendido
+    public int mesa;
 
     
     
-    public Pedido(Cliente cliente, int numeroDePessoas, String horaEntrada, String horaSaida, String dataEntrada, String dataSaida, int id){
+    public Pedido(Cliente cliente, int numeroDePessoas, int id){
         this.cliente = cliente;
         this.numeroDePessoas = numeroDePessoas;
-        this.horaEntrada = horaEntrada;
-        this.horaSaida = horaSaida;
-        this.dataEntrada = dataEntrada;
-        this.dataSaida = dataSaida;
         this.id = id;
+        this.statusPedido = false;
         this.mesa = 0;
+    }
+    
+    public void AssociarData(int idMesa){
+        this.mesa = idMesa;
+        this.statusPedido = true;
+    }
+    
+    public void AssociarMesa(int idMesa){
+        this.mesa = idMesa;
+        this.statusPedido = true;
     }
     
 }

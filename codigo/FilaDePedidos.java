@@ -1,4 +1,4 @@
-package sistemarestaurante;
+package projetorestaurante;
 
 import java.util.ArrayList;
 
