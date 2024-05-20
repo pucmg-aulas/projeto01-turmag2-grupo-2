@@ -1,4 +1,4 @@
-package projetorestaurante;
+package sistemarestaurante;
 
 import java.util.ArrayList;
 
@@ -38,15 +38,23 @@ public class FilaDePedidos {
 
         return null;
     }
+    
+    public Pedido retornaPedido(int num){
+        Pedido pedido = filaDeEspera.get(num);
+        return pedido;
+                }
+    
 
     public void listarPedidos() {
         for (Pedido pedido : filaDeEspera) {
             System.out.println("----------------------------------------------------------------------------------------------");
             System.out.println("Cliente: " + pedido.cliente.nome + " ID do pedido: " + pedido.id + " Num de Pessoas: " + pedido.numeroDePessoas + " Tel. P/ contato: " + pedido.cliente.telefone);
-            System.out.println("Dia Entrada: " + pedido.horaEntrada + " Dia Saida: " + pedido.horaSaida + " Hora da Entrada: " + pedido.horaEntrada + " Hora da Saida: " + pedido.horaSaida);
+            System.out.println("Entrada: " + pedido.entrada + " Saida: " + pedido.saida );
             System.out.println("----------------------------------------------------------------------------------------------");
         }
 
     }
+    
+    
 
 }

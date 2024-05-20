@@ -13,6 +13,9 @@ public class Mesa {
     int idMesa;
     int capacidade;
     boolean disponibilidade;
+    public static Pedido pedido;
+    static Comanda comanda = new Comanda();
+    
     public Mesa(int idMesa, int capacidade, boolean disponibilidade){
         this.idMesa = idMesa;
         this.capacidade = capacidade;
@@ -24,6 +27,7 @@ public class Mesa {
     }
     public void desalocarMesa(){
         this.disponibilidade = true;
+        this.pedido = null;
     }
     public boolean verificarCapacidade(Pedido pedido){
         int pessoas = pedido.numeroDePessoas;
