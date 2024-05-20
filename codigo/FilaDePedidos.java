@@ -49,6 +49,14 @@ public class FilaDePedidos {
         for (Pedido pedido : filaDeEspera) {
             System.out.println("----------------------------------------------------------------------------------------------");
             System.out.println("Cliente: " + pedido.cliente.nome + " ID do pedido: " + pedido.id + " Num de Pessoas: " + pedido.numeroDePessoas + " Tel. P/ contato: " + pedido.cliente.telefone);
+            System.out.println("----------------------------------------------------------------------------------------------");
+        }
+
+    }
+    public void listarHistorico() {
+        for (Pedido pedido : filaDeEspera) {
+            System.out.println("----------------------------------------------------------------------------------------------");
+            System.out.println("Cliente: " + pedido.cliente.nome + " ID do pedido: " + pedido.id + " Num de Pessoas: " + pedido.numeroDePessoas + " Tel. P/ contato: " + pedido.cliente.telefone);
             System.out.println("Entrada: " + pedido.entrada + " Saida: " + pedido.saida );
             System.out.println("----------------------------------------------------------------------------------------------");
         }

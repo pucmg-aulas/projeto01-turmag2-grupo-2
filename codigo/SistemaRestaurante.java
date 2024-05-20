@@ -125,7 +125,7 @@ public class SistemaRestaurante {
 
                 case 7:
                     System.out.println("- Histórico -");
-                    historico.listarPedidos();
+                    historico.listarHistorico();
                     System.out.println("");
                     System.out.println("************************");
                     break;
@@ -291,7 +291,7 @@ public class SistemaRestaurante {
         
         mesas[mesaALiberar].desalocarMesa();
         
-        System.out.println("A mesa " + mesas[mesaALiberar].idMesa + " foi desocupada!");
+        System.out.println("A mesa " + mesas[mesaALiberar-1].idMesa + " foi desocupada!");
         
 
     }
